@@ -46,6 +46,11 @@ Configuration variables:
     very likely that power-cycling the ESP module is required once after
     the serial upload.
 
+Automations:
+
+- **on_start** (*Optional*, :ref:`Automation <automation>`): An automation to perform
+  when the OTA starts.
+
 Updating the password:
 ----------------------
 
@@ -62,6 +67,7 @@ through an ``on_boot`` trigger:
     ota:
       password: "Old password"
       id: my_ota
+
 
 See Also
 --------
